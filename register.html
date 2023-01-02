@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS | Register now!</title>
+    <link rel="stylesheet" href="./register-style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <form action="./login.html" id="register-form">
+            <label for="">
+             <p id="errorMessage" style="color: red;"></p>
+            </label>
+            <label for="username">Username:</label>
+            <input type="text" id="username">
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+            <label for="password">Password:</label>
+            <input type="text" id="password">
+            <label for="confirmPassword">Confirm the password:</label>
+            <input type="password" id="confirmPassword">
+            <button id="reg-btn" type="submit">Sing In</button>
+            <p id="registerValid" style="color: chartreuse; text-align: center;"></p>
+
+        </form>
+
+    </div>
+
+    <script type="module" src="./register-main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Charmonman:wght@700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+
+/* CSS variables */
+:root {
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: #000;
+    --color-bg: #1f2641;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+
+    --container-width-lg: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.7;
+    color: var(--color-white);
+    background-color: var(--color-bg);
+}
+
+
+#register-form {
+    width: 200px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 12px 8px 12px 8px;
+}
+
+#register-form label {
+    font-family: "Montserrat", sans-serif;
+}
+
+#register-form input {
+    width: 80%;
+    padding: 12px 20px;
+    margin:  8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#register-form input:hover {
+    background-color: #a2d1c9;
+}
+
+
+#register-form button {
+    cursor: pointer;
+    width: 75%;
+    padding: 10px 20px;
+    margin: 18px;
+    background-color: #61bd64;
+    border: none;
+    border-radius: 6px;
+}
+
+#register-form button:hover {
+        background-color: #08e09f;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 96px;
+}
+
+form {
+    background-color: rgb(64, 22, 250);
+}
+
+#register-form label #link {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+
+}
+
+#register-form label #link:hover {
+    color: rgb(236, 240, 0);
+}

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Stone courses</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Charmonman:wght@700&family=Kanit:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* CSS variables */
+
+:root {
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: #000;
+    --color-bg: #1f2641;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 500ms ease;
+}
+
+body, a {
+    font-family: 'Kanit', sans-serif;
+    line-height: 1.7;
+    color: var(--color-white);
+    background-color: var(--color-bg);
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: var(--color-bg2);
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Courses from the best</h1>
+<hr>
+
+<h2>Our list</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('information')"> Information technology</button>
+  <button class="btn" onclick="filterSelection('Business')"> Business</button>
+  <button class="btn" onclick="filterSelection('Home')"> Home</button>
+</div>
+
+<!-- Courses Gallery Grid -->
+
+<div class="row">
+
+
+    <!-- Information technology -->
+  
+  <div class="column information">
+    <a href="https://www.coursera.org/specializations/uci-blockchain?">
+     <div class="content">
+      <img src="https://kriptomat.io/wp-content/uploads/2022/01/what-is-the-future-of-the-blockchain-revolution.png"  style="width:95%">
+      <h4>Blockchain</h4>
+      <p>Block Chain crash course...</p>
+     </div>
+    </a>
+  </div>
+
+  <div class="column information">
+    <a href="https://www.coursera.org/learn/javascript-jquery-json">
+     <div class="content">
+       <img src="https://moralis.io/wp-content/uploads/2021/07/Moralis-Blogpost-JavaScript-Explained-07272021-V12.png"  style="width:90%">
+        <h4>JavaScript</h4>
+        <p>JS for webdev and more...</p>
+     </div>
+    </a>
+  </div>
+
+  <div class="column information">
+    <a href="https://www.coursera.org/specializations/python?=">
+     <div class="content">
+     <img src="https://www.analyticsinsight.net/wp-content/uploads/2022/03/Python-Remains-at-the-Top-Despite-the-Intro-of-New-Coding-Langs.jpg" style="width:84%">
+       <h4>Python</h4>
+       <p>We may heard about python but what is this</p>
+     </div>
+    </a>
+  </div>
+  
+
+
+  <div class="column information">
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DMcojvctVsUs&psig=AOvVaw2_hmt5py7OcH7V7WgL-Ib0&ust=1672660499938000&source=images&cd=vfe&ved=0CBEQjhxqFwoTCMiO1omopvwCFQAAAAAdAAAAABAT">
+     <div class="content">
+       <img src="https://i.ytimg.com/vi/McojvctVsUs/maxresdefault.jpg"  style="width:100%">
+       <h4>C++</h4>
+      <p>C++ crash course for beginners</p>
+     </div>
+    </a>
+  </div>
+
+  <div class="column information">
+    <a href="https://www.coursera.org/specializations/django">
+     <div class="content">
+      <img src="https://vtiacademy.edu.vn/upload/images/django-trong-python-2.jpg"  style="width:100%">
+       <h4>Django</h4>
+       <p>framework for python users, lean it now! </p>
+     </div>
+    </a>
+  </div>
+
+  <div class="column information">
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.educba.com%2Fwhat-is-assembly-language%2F&psig=AOvVaw1y1-GUYTYrjYueSpuqxHOc&ust=1672660967884000&source=images&cd=vfe&ved=0CBEQjhxqFwoTCJjw4uippvwCFQAAAAAdAAAAABAE">
+     <div class="content">
+      <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/05/What-is-Assembly-Language.jpg" style="width:100%">
+       <h4>Assembly</h4>
+       <p>Introduction of Assembly language</p>
+     </div>
+    </a>
+  </div>
+  
+
+
+
+
+
+
+
+
+  <!-- BUSINESS -->
+  <div class="column Business">
+    <a href="https://www.masterclass.com/classes/paul-krugman-teaches-economics-and-society">
+     <div class="content">
+       <img src="https://w7.pngwing.com/pngs/862/476/png-transparent-international-political-economy-economics-society-political-economy-text-logo-research.png" style="width:100%">
+       <h4>Economics and society </h4>
+       <p>Nobel Prize-winning economist Paul Krugman teaches you the economic theories that drive history...</p>
+     </div>
+    </a>
+  </div>
+
+  <div class="column Business">
+    <a href="https://www.masterclass.com/classes/president-george-w-bush-teaches-authentic-leadership">
+     <div class="content">
+       <img src="./courses_dropdown/george.png" style="width:100%">
+       <h4>Authentic Leadership</h4>
+       <p>The 43rd U.S. president teaches leadership skills from his career and opens up about painting</p>
+     </div>
+    </a>
+  </div>
+
+  <div class="column Business">
+    <a href="https://www.masterclass.com/classes/president-bill-clinton-teaches-inclusive-leadership">
+     <div class="content">
+       <img src="./courses_dropdown/bill.png" style="width:100%">
+       <h4>Inclusive Leadership</h4>
+       <p>President Bill Clinton teaches you how to inspire diverse teams, manage criticism, and mediate conflict.</p>
+     </div>
+    </a>
+  </div>
+
+
+
+  <!-- Home -->
+  <div class="column Home">
+    <a href="https://www.masterclass.com/classes/gordon-ramsay-teaches-cooking-restaurant-recipes-at-home">
+     <div class="content">
+       <img src="https://qph.cf2.quoracdn.net/main-qimg-0048581db14ba992e5f247267ced211b-lq" style="width:100%">
+       <h4>Restaurant Recipes at Home</h4>
+       <p>Learn to cook restaurant-inspired dishes with tips for time-saving prep to show-stopping presentation.</p>
+     </div>
+    </a>
+  </div>
+
+  <div class="column Home">
+    <a href="https://www.masterclass.com/classes/brandon-mcmillan-teaches-dog-training">
+     <div class="content">
+       <img src="https://www.lucypetproducts.com/wp-content/uploads/2021/04/Brandon_McMillan.jpg" style="width:95%">
+       <h4>Dog Training</h4>
+       <p>Effective training system to build trust and control with your dog.</p>
+     </div>
+    </a>
+  </div>
+
+  <div class="column Home">
+    <a href="https://www.masterclass.com/classes/gordon-ramsay-teaches-cooking-restaurant-recipes-at-home">
+     <div class="content">
+       <img src="https://learnopoly.com/wp-content/uploads/2021/03/Niki-Nakayama8.jpg" style="width:100%">
+       <h4>Modern Japanese Cooking</h4>
+       <p>Niki Nakayama teaches you how to honor fresh ingredients with her innovative take on Japanese home cooking techniques..</p>
+     </div>
+    </a>
+  </div>
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+        
+filterSelection("all")
+
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    courseRemove(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) courseAdd(x[i], "show");
+  }
+}
+// Add courses by their name: 
+function courseAdd(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function courseRemove(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
